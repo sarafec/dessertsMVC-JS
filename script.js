@@ -244,7 +244,11 @@ function routeRecipe(evt){
 	let stateObj = {
 		recipe: loadRecipePage(evt),
 	}
-	history.pushState(stateObj, "", targetUrl);	
+	if(window.location.pathname !== "/dessertsMVC-JS/") {
+		history.pushState(stateObj, "", "dessertsMVC-JS/" + targetUrl);	
+	} else {
+		history.pushState(stateObj, "", targetUrl);	
+	}
 }
 
 
