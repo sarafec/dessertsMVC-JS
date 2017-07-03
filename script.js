@@ -109,7 +109,7 @@ function loadLanding(){
 	let stateObj = {
 		recipe: loadLandingTemplate(templateTitle, dessertsArr)
 	}
-	history.pushState(stateObj, "", "/");	
+	history.pushState(stateObj, "", "dessertsMVC-JS");	
 
 }
 
