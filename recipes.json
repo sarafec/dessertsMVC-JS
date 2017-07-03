@@ -1,0 +1,94 @@
+[
+	{
+		"title": "Chocolate Chip Cookies",
+		"servings": "50 cookies",
+		"url": "chocolate-chip-cookies",
+		"ingredients": [
+			{"quantity": "2", "unit": "cup", "item": "shortening"},
+			{"quantity": "1.5", "unit": "cup", "item": "white sugar"},
+			{"quantity": "1.5", "unit": "cup", "item": "brown sugar"},
+			{"quantity": "4", "unit": "NA", "item": "eggs, beaten"},
+			{"quantity": "24", "unit": "ounces", "item": "chocolate chips"},
+			{"quantity": "5", "unit": "cup", "item": "flour"},
+			{"quantity": "1.5", "unit": "tsp", "item": "salt"},
+			{"quantity": "2", "unit": "tsp", "item": "soda"},
+			{"quantity": "2", "unit": "tsp", "item": "hot water"},
+			{"quantity": "2", "unit": "tsp", "item": "vanilla"}
+		],
+		"steps": [
+			{"order": "1", "instruction": "Cream brown sugar, shortening, and white sugar together in a mixer."},
+			{"order": "2", "instruction": "Add eggs to the mixer."},
+			{"order": "3", "instruction": "Add flour and salt to the mixer."},
+			{"order": "4", "instruction": "Add soda dissolved in hot water to the mixer."},
+			{"order": "5", "instruction": "Add vanilla to the mixer."},
+			{"order": "6", "instruction": "Mix in chocolate chips by hand."},
+			{"order": "7", "instruction": "Roll dough into balls and place on cookie sheet."},
+			{"order": "8", "instruction": "Bake cookies for 12 minutes at 350F."}
+		]
+	},
+
+	{
+		"title": "S'mores Marshmallow Treats",
+		"servings": "16 treats",
+		"url": "smores-marshmallow-treats",
+		"ingredients": [
+			{"quantity": "8", "unit": "cup", "item": "Golden Grahams Cereal"},
+			{"quantity": "10", "unit": "ounce", "item": "mini marshmallows"},
+			{"quantity": "9", "unit": "ounce", "item": "chocolate chips"},
+			{"quantity": "5", "unit": "tbsp", "item": "margarine"},
+			{"quantity": "1", "unit": "tbsp", "item": "water"},
+			{"quantity": "1", "unit": "tsp", "item": "vanilla"}
+		],
+		"steps": [
+			{"order": "1", "instruction": "Grease a 13x9-inch pan, set aside."},
+			{"order": "2", "instruction": "Place cereal in a bowl, set aside."},
+			{"order": "3", "instruction": "Heat 4.5 cups marshmallows, chocolate chips, butter, sugar and water over low heat."},
+			{"order": "4", "instruction": "Stir mixture occasionally until completely melted."},
+			{"order": "5", "instruction": "When melted, remove from heat and stir in the vanilla."},
+			{"order": "6", "instruction": "Pour heated marshmallow mixture over cereal in bowl."},
+			{"order": "7", "instruction": "Stir remaining marshmallows into cereal and mashmallow mixture."}
+		]
+	},
+
+	{
+		"title": "Funfetti Cookies",
+		"servings": "22 cookies",
+		"url": "funfetti-cookies",
+		"ingredients": [
+			{"quantity": "19", "unit": "ounce", "item": "Funfetti Cake Mix"},
+			{"quantity": ".33", "unit": "cup", "item": "vegetable oil"},
+			{"quantity": "2", "unit": "NA", "item": "eggs"}
+		],
+		"steps": [
+			{"order": "1", "instruction": "Combine cake mix, oil, and eggs in a large bowl."},
+			{"order": "2", "instruction": "Roll dough into balls and place on a cookie sheet."},
+			{"order": "3", "instruction": "Bake cookies at 375F for 6-8 minutes."}
+		]
+	},
+
+	{
+		"title": "Molasses Cookies",
+		"servings": "40 cookies",
+		"url": "molasses-cookies",
+		"ingredients": [
+			{"quantity": "2.25", "unit": "cup", "item": "shortening"},
+			{"quantity": "3", "unit": "cup", "item": "brown sugar"},
+			{"quantity": "3", "unit": "NA", "item": "eggs"},
+			{"quantity": ".75", "unit": "cup", "item": "molasses"},
+			{"quantity": "6.75", "unit": "cup", "item": "flour"},
+			{"quantity": "6", "unit": "tsp", "item": "soda"},
+			{"quantity": ".75", "unit": "tsp", "item": "salt"},
+			{"quantity": "1.5", "unit": "tsp", "item": "cloves"},
+			{"quantity": "3", "unit": "tsp", "item": "cinnamon"},
+			{"quantity": "3", "unit": "tsp", "item": "ginger"}
+		],
+		"steps": [
+			{"order": "1", "instruction": "Stir shortening, brown sugar, eggs, molasses together in a mixer."},
+			{"order": "2", "instruction": "Add flour, soda, salt, cloves, cinnamon and ginger to the mixer."},
+			{"order": "3", "instruction": "Place dough in a regrigerator to chill for an hour or more."},
+			{"order": "4", "instruction": "Roll dough into balls, dip tops of balls in sugar and sprinkle a few drops of water on top."},
+			{"order": "5", "instruction": "Arrange cookie dough balls on a cookie sheet."},
+			{"order": "6", "instruction": "Bake cookies at 350F for 10-12 minutes."}
+		]
+	}
+]
