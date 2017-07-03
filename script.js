@@ -105,11 +105,18 @@ function enableEvents(){
 
 function loadLanding(){
 	let templateTitle = "landingTpl";
-
 	let stateObj = {
 		recipe: loadLandingTemplate(templateTitle, dessertsArr)
 	}
-	history.pushState(stateObj, "", "dessertsMVC-JS");	
+
+	if(window.location.pathname !== "/dessertsMVC-JS/"){
+
+		history.pushState(stateObj, "", "dessertsMVC-JS");	
+
+	} else {
+
+		history.pushState(stateObj, "", "/");	
+	}
 
 }
 
