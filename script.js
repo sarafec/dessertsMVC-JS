@@ -83,6 +83,8 @@ function enableEvents(){
 		}
 	}, false);
 
+	//commenting out header navigation in order to troubleshooot routing issues
+	/*  
 	let headerArea = document.querySelector("header");
 	headerArea.addEventListener("click", function(){
 		return loadLanding();
@@ -96,6 +98,7 @@ function enableEvents(){
 			return loadLanding();
 		}
 	}, false);
+	*/
 
 	window.addEventListener("popstate", function(){
 			return loadLanding();
@@ -111,7 +114,7 @@ function loadLanding(){
 
 	if(window.location.pathname.length > 17){
 
-		history.pushState(stateObj, "", "dessertsMVC-JS");	
+		history.pushState(stateObj, "", "/dessertsMVC-JS");	
 
 	} else {
 		
