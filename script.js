@@ -84,10 +84,10 @@ function enableEvents(){
 	}, false);
 
 	let headerArea = document.querySelector("header");
-	headerArea.addEventListener("click", function(evt){
+	headerArea.addEventListener("click", function(){
 		return loadLanding();
 	}, false)
-	headerArea.addEventListener("touchstart", function(evt){
+	headerArea.addEventListener("touchstart", function(){
 		return loadLanding();
 	}, false)
 
@@ -109,13 +109,13 @@ function loadLanding(){
 		recipe: loadLandingTemplate(templateTitle, dessertsArr)
 	}
 
-	if(window.location.pathname !== "/dessertsMVC-JS/"){
+	if(window.location.pathname.length > 17){
 
 		history.pushState(stateObj, "", "dessertsMVC-JS");	
 
 	} else {
-
-		history.pushState(stateObj, "", "/");	
+		
+		loadLandingTemplate(templateTitle, dessertsArr);
 	}
 
 }
