@@ -83,22 +83,21 @@ function enableEvents(){
 		}
 	}, false);
 
-	//commenting out header navigation in order to troubleshooot routing issues
-	/*  
+ 
 	let headerArea = document.querySelector("header");
 	headerArea.addEventListener("click", function(){
 		return loadLanding();
-	}, false)
+	}, false);
+
 	headerArea.addEventListener("touchstart", function(){
 		return loadLanding();
-	}, false)
+	}, false);
 
 	headerArea.addEventListener("keyup", function(evt){
 		if(evt.which == 13){
 			return loadLanding();
 		}
 	}, false);
-	*/
 
 	window.addEventListener("popstate", function(){
 			return loadLanding();
@@ -106,13 +105,16 @@ function enableEvents(){
 
 }
 
+
+
 function loadLanding(){
 	let templateTitle = "landingTpl";
+	let pathName = window.location.pathname.length;
 	let stateObj = {
 		recipe: loadLandingTemplate(templateTitle, dessertsArr)
 	}
 
-	if(window.location.pathname.length > 17){
+	if(pathName > 0 && pathName < 17){
 
 		history.pushState(stateObj, "", "/dessertsMVC-JS");	
 
