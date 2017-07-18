@@ -110,7 +110,7 @@ function enableEvents(){
 function loadLanding(){
 	let templateTitle = "landingTpl";
 	//mandatory pathname for github pages
-	let relativeDomain = 'dessertsmvc-js';
+	let relativeDomain = 'dessertsMVC-JS';
 	let stateObj = {
 		recipe: loadLandingTemplate(templateTitle, dessertsArr)
 	}
@@ -238,7 +238,8 @@ function populateRecipeSteps(data){
 function routeRecipe(evt){
 
 	let targetElem = evt.target;
-	let relativeDomain = 'dessertsmvc-js';
+	//mandatory pathname for github pages
+	let relativeDomain = 'dessertsMVC-JS';
 	let targetUrl = targetElem.getAttribute("data-name");
 	let stateObj = {
 		recipe: loadRecipePage(evt),
