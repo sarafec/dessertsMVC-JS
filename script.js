@@ -100,7 +100,7 @@ function enableEvents(){
 	}, false);
 
 	window.addEventListener("popstate", function(){
-			return loadLanding();
+		return loadLanding();
 	}) 
 
 }
@@ -109,20 +109,13 @@ function enableEvents(){
 
 function loadLanding(){
 	let templateTitle = "landingTpl";
-	let pathName = window.location.pathname.length;
+	//mandatory pathname for github pages
+	let relativeDomain = 'dessertsmvc-js';
 	let stateObj = {
 		recipe: loadLandingTemplate(templateTitle, dessertsArr)
 	}
 
-	if(pathName > 0 && pathName < 17){
-
-		history.pushState(stateObj, "", "/dessertsMVC-JS");	
-
-	} else {
-		
-		loadLandingTemplate(templateTitle, dessertsArr);
-	}
-
+		history.pushState(stateObj, "", "/" + relativeDomain + "/" + "recipe");	
 }
 
 //RECIPE VIEW---
@@ -245,15 +238,14 @@ function populateRecipeSteps(data){
 function routeRecipe(evt){
 
 	let targetElem = evt.target;
+	let relativeDomain = 'dessertsmvc-js';
 	let targetUrl = targetElem.getAttribute("data-name");
 	let stateObj = {
 		recipe: loadRecipePage(evt),
 	}
-	if(window.location.pathname !== "/dessertsMVC-JS/") {
-		history.pushState(stateObj, "", "dessertsMVC-JS/" + targetUrl);	
-	} else {
-		history.pushState(stateObj, "", targetUrl);	
-	}
+		
+	history.pushState(stateObj, "", "/"  + relativeDomain + "/recipe/" + targetUrl);	
+	
 }
 
 
