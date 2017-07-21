@@ -115,7 +115,7 @@ function loadLanding(){
 		recipe: loadLandingTemplate(templateTitle, dessertsArr)
 	}
 
-		history.pushState(stateObj, "", "/" + relativeDomain + "/" + "recipe");	
+		history.pushState(stateObj, "", "/" + relativeDomain + "/");	
 }
 
 //RECIPE VIEW---
