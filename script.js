@@ -55,8 +55,6 @@ let createLandingPageElements = function(index, dessertsArr){
 	dessertEntry.setAttribute("tabindex", 2);
 	dessertEntry.id = index;
 	dessertEntry.classList.add("dessert-item");
-	dessertEntry.style.marginBottom = "20px";
-	dessertEntry.style.fontSize = "20px";
 	linkItem.appendChild(dessertEntry);
 
 }
